@@ -49,7 +49,6 @@ jobs:
           AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
           AWS_BUCKET_KEY_NAME: ${{ secrets.AWS_BUCKET_KEY_NAME }}
         run: terraform init
-        working-directory: environment/env
 
       - name: Terraform Validate
         id: validate
