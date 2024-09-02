@@ -31,7 +31,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE }}
           aws-region: ${{ secrets.AWS_REGION }}
-          role-session-name: GitHub-OIDC-TERRAFORM
+          role-session-name: isengard
       
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
@@ -40,7 +40,7 @@ jobs:
 
       - name: Terraform fmt
         id: fmt
-        run: terraform fmt -check
+        run: terraform fmt -recursive -check -diff
         continue-on-error: true
 
       - name: Terraform Init
