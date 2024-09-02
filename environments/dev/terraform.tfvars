@@ -1,3 +1,3 @@
-cluster_identifier = "dev_amazon_aurora"
+cluster_identifier = "dev-amazon-aurora"
 engine             = "aurora-mysql"
 engine_mode        = "serverless"
