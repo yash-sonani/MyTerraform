@@ -18,3 +18,8 @@ variable "engine_mode" {
     error_message = "The engine mode must be either 'global', 'parallelquery', 'provisioned', or 'serverless'."
   }
 }
+
+variable "master_username" {
+  description = "Provide AWS Aurora Master Username"
+  type        = string
+}

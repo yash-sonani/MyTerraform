@@ -3,4 +3,5 @@ module "amazon_aurora" {
   cluster_identifier = var.cluster_identifier
   engine             = var.engine
   engine_mode        = var.engine_mode
+  master_username    = var.master_username
 }
