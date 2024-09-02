@@ -21,7 +21,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: environment/dev
+        working-directory: environments/dev
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
